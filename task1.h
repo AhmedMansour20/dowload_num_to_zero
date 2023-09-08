@@ -1,9 +1,6 @@
-//#pragma once 
-//#ifndef _H_
-//#define _H_ */
-//#pragma GCC  poison printf 
-//#pragma GCC warning printf 
-//#pragma GCC error printf 
+/************************ File gard start ***********/
+#ifndef TASK1_H
+#define TASK1_H
 /************************ Data type section start ***********************/
 #define CPU_TYPE_8  8 
 #define CPU_TYPE_16 16
@@ -53,7 +50,7 @@ typedef enum digits{ //data storage for 1, 2.
 void numberOfStepsToZero(void);
 /************************ Sub-program declaration end ************************************/
 
-
-    
+/************************ File gard end ***********/
+#endif   
 	
 	 
