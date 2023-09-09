@@ -1,4 +1,4 @@
-/************************ File gard start ***********/
+/************************ File gaurd start ***********/
 #ifndef TASK1_H
 #define TASK1_H
 /************************ Data type section start ***********************/
@@ -38,19 +38,18 @@ typedef enum digits{ //data storage for 1, 2.
 #include<windows.h>
 /************************ Include section end   ************************************/
 /****** ****************** Sub-program declaration start **********************************/
-
 /** 
 ************************************
 * @func.name:	numberOfStepsToZero
-* @task     :	cont numbers of steps 
-				to reach entered num. to 1
+* @task     :   counting numbers of steps to reduce 
+				the entered number to 0
 * @return   :	no return (void)
 ************************************
 */
 void numberOfStepsToZero(void);
 /************************ Sub-program declaration end ************************************/
 
-/************************ File gard end ***********/
+/************************ File gaurd end ***********/
 #endif   
 	
 	 

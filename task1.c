@@ -10,7 +10,9 @@
 /************************ Include section end  ***********/
 /********** Main-program section start********************/
 int main( void ){
-uint8 counter = ZERO;
+	/* counting numbers of steps to reduce 
+	   the entered number to zero 
+	*/
 	numberOfStepsToZero();
 }
 /********** Main-program section end ********************/
@@ -30,27 +32,27 @@ usedDat_t vars = { // data storage initialization.
 	ZERO,  // entered number initialization.
 	ZERO   // counter initialization.
 };
-    //printf("sizeof enum %i", sizeof(digits_e));
-    //printf("value %i\n", one );
+    // for user onterfacing
+    printf("counting numbers of steps to reduce");
+    printf(" the entered number to zero");
     printf("Enter Integer Number : ");//Interfacing with user
-	
-	scanf("%i", &vars.number);//Get integer value from user
-	while(vars.number >= one){//Loop till vars.number reach to 1
-		if ( (vars.number % two) == ZERO ){//check even status
-			/* divide number by 2 equivelant to
-			vars.number /= 2; equivelant to vars.number = (vars.number>>1);*/
-			vars.number >>= one;//divide vars.number by 2
-			vars.counter++;//increase counter by 1
+	scanf("%i", &vars.number); //Get integer value from user
+	while(vars.number >= one){ //Loop till vars.number reach to 1
+		if ( (vars.number % two) == ZERO ){ //check even status
+			/* 	divide number by 2 equivelant to
+				vars.number /= 2; equivelant to 
+				vars.number = (vars.number>>1);
+			*/
+			vars.number >>= one; //divide vars.number by 2
+			vars.counter++;      //increase counter by 1
 		}else if( (vars.number % two) != ZERO ){//chek odd status
-			vars.number--;//decrease counter by 1
-		    vars.counter++;//increase counter by 1
+			vars.number--;  //decrease counter by 1
+		    vars.counter++; //increase counter by 1
 		}
 	}
 	printf("counter = %i", vars.counter);
 }
 /*********** Sub-program section end *******************/
-
-
 
 /** 
 ******************************************
