@@ -33,9 +33,9 @@ usedDat_t vars = { // data storage initialization.
 	ZERO   // counter initialization.
 };
     // for user onterfacing
-    printf("counting numbers of steps to reduce");
-    printf(" the entered number to zero");
-    printf("Enter Integer Number : ");//Interfacing with user
+    printf("\n( counting numbers of steps to reduce");
+    printf(" the entered number to zero )\n");
+    printf("	Enter Integer Number : ");//Interfacing with user
 	scanf("%i", &vars.number); //Get integer value from user
 	while(vars.number >= one){ //Loop till vars.number reach to 1
 		if ( (vars.number % two) == ZERO ){ //check even status
@@ -50,7 +50,7 @@ usedDat_t vars = { // data storage initialization.
 		    vars.counter++; //increase counter by 1
 		}
 	}
-	printf("counter = %i", vars.counter);
+	printf("counter or steps numbers = %i", vars.counter);
 }
 /*********** Sub-program section end *******************/
 
